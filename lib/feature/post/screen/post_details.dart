@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:task/feature/post/data/model/post_data.dart';
 
@@ -26,7 +28,7 @@ class PostDetailScreen extends StatelessWidget {
               ListTile(
                 title: Text("user ${postData.id}"),
                 leading: CircleAvatar(
-                  backgroundColor: Colors.primaries[postData.id ?? 1],
+                  backgroundColor:Colors.primaries[Random().nextInt(Colors.primaries.length)],
                   child: Text(
                     postData.id.toString(),
                     style: const TextStyle(
