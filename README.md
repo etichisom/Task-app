@@ -1,16 +1,16 @@
 # task
 
-A new Flutter project.
+Flutter developer Task
 
-## Getting Started
+### Environment setup
+This is a Flutter application and requires you have flutter installed on your computer.
 
-This project is a starting point for a Flutter application.
+### Flutter installation
+You should follow the [Flutter installation guide here](https://flutter.dev/docs/get-started/install)
 
-A few resources to get you started if this is your first Flutter project:
+### Setting up locally
+- Clone the repo locally
+- Run `flutter pub get` to install the required dart packages
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Running the application
+All you need to run the application is `flutter run`
