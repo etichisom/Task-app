@@ -22,6 +22,7 @@ class NetworkService {
           .get(
         baseUrl+path,
         options: Options(
+          sendTimeout: const Duration(seconds: 10),
           method: 'GET',
         ),
         queryParameters: query,
@@ -49,7 +50,7 @@ class NetworkService {
         if (error.message.toString().contains('SocketException')) {
           message = 'Please check your network and try again';
         } else {
-          message = DEFAULT_ERROR_MSG;
+          message = 'Please check your network and try again';
         }
         break;
       case DioErrorType.badResponse:

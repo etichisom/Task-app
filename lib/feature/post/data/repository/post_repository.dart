@@ -20,7 +20,7 @@ class PostRepository extends PostRepositoryImpl {
       }
       return list;
     } on CustomException catch (e) {
-      throw e.toString();
+      throw e.message;
     } catch (e) {
       throw "Something went wrong";
     }
